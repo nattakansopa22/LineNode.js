@@ -26,7 +26,7 @@ app.post('/webhook', (req, res) => {
   var replyToken = req.body.events[0].replyToken
   console.log(text, sender, replyToken)
   console.log(typeof sender, typeof text)
-  // console.log(req.body.events[0])
+  console.log(req.body.events[0])
   if (text === 'info' || text === 'รายงาน') {
     // Info
     inFo(sender, text)
