@@ -11,10 +11,17 @@ var mqtt_host = 'hairdresser.cloudmqtt.com';
 var mqtt_topic = '/ESP32';
 // MQTT Config
 var options = {
-    port: 16093,
-    host: 'hairdresser.cloudmqtt.com',
-    username: 'qtjwedau',
-    password: 'pSYbwv9cIIWS',
+  port: 16093,
+  host: 'hairdresser.cloudmqtt.com',
+  clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
+  username: 'qtjwedau',
+  password: 'pSYbwv9cIIWS',
+  keepalive: 60,
+  reconnectPeriod: 1000,
+  protocolId: 'MQIsdp',
+  protocolVersion: 3,
+  clean: true,
+  encoding: 'utf8'
 };
 app.use(bodyParser.json())
 app.set('port', (process.env.PORT || 4000))
