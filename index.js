@@ -6,13 +6,13 @@ var mqtt = require('mqtt');
 // Your Channel access token (long-lived) 
 const CH_ACCESS_TOKEN = 'PrEXTPeWFFBKhqPxCjRz1+tKJ76bSTmkKkzVE3UwSBcMedaupGVzEWZGffy/j6iUanH2mt+jri8nLCtOgX8QTZCRD7fmo1QIIIwZ0ikCt7bwbUx6pm7GPxPQt8UNFKbuqEZfp364rzhmKQvRZVgsFAdB04t89/1O/w1cDnyilFU=';
 // MQTT Host
-var mqtt_host = 'hairdresser.cloudmqtt.com';
+var mqtt_host = 'mqtt://hairdresser.cloudmqtt.com';
 // MQTT Topic
 var mqtt_topic = '/ESP32';
 // MQTT Config
 var options = {
   port: 16093,
-  host: 'hairdresser.cloudmqtt.com',
+  host: 'mqtt://hairdresser.cloudmqtt.com',
   clientId: 'mqttj_' + Math.random().toString(16).substr(2, 8),
   username: 'qtjwedau',
   password: 'pSYbwv9cIIWS',
