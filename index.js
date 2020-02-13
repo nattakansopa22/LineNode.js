@@ -11,7 +11,7 @@ var mqtt_host = 'mqtt://hairdresser.cloudmqtt.com';
 var mqtt_topic = '/ESP32';
 // MQTT Config
 var options = {
-    port: 15443,
+    port: 16093,
     host: 'mqtt://hairdresser.cloudmqtt.com',
     clientId: 'Kan' + Math.random().toString(16).substr(2, 8),
     username: 'qtjwedau',
