@@ -38,11 +38,11 @@ app.post('/webhook', (req, res) => {
     // Info
     inFo(sender, text)
   }
-  else if (text === '1' || text === 'เปิด' || text === 'on') {
+  else if (text === 'Start') {
     // LED On
     ledOn(sender, text)
   }
-  else if (text === '0' || text === 'ปิด' || text === 'off') {
+  else if (text === 'Stop') {
     // LED Off
     ledOff(sender, text)
   }
@@ -58,7 +58,7 @@ function sendText (sender, text) {
     messages: [
       {
         type: 'text',
-        text: 'กรุณาพิมพ์ : info | on | off | เปิด | ปิด เท่านั้น'
+        text: 'กรุณาพิมพ์ : Start หรือ Stop เท่านั้น'
       }
     ]
   }
