@@ -127,7 +127,7 @@ function ledOn (sender, text) {
     messages: [
       {
         type: 'text',
-        text: 'LED ON'
+        text: 'สตาร์ทรถให้เรียบร้อยครับท่าน'
       }
     ]
   }
@@ -170,7 +170,7 @@ function ledOff (sender, text) {
     messages: [
       {
         type: 'text',
-        text: 'LED OFF'
+        text: 'ดับรถให้เรียบร้อยแล้วครับท่าน'
       }
     ]
   }
