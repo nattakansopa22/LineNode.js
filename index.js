@@ -13,7 +13,7 @@ var mqtt_topic = '/ESP32';
 var options = {
   port: 16093,
   host: 'hairdresser.cloudmqtt.com',
-  clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
+  clientId: 'mqttj_' + Math.random().toString(16).substr(2, 8),
   username: 'qtjwedau',
   password: 'pSYbwv9cIIWS',
   keepalive: 60,
