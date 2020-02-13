@@ -38,11 +38,11 @@ app.post('/webhook', (req, res) => {
     // Info
     inFo(sender, text)
   }
-  else if (text === 'Start') {
+  else if (text === '1' || text === 'เปิด' || text === 'start') {
     // LED On
     ledOn(sender, text)
   }
-  else if (text === 'Stop') {
+  else if (text === '0' || text === 'ปิด' || text === 'stop') {
     // LED Off
     ledOff(sender, text)
   }
@@ -58,7 +58,7 @@ function sendText (sender, text) {
     messages: [
       {
         type: 'text',
-        text: 'กรุณาพิมพ์ : Start หรือ Stop เท่านั้น'
+        text: 'กรุณาพิมพ์ : 0|1  :  ปิด|เปิด   :   start|stop'
       }
     ]
   }
@@ -127,7 +127,7 @@ function ledOn (sender, text) {
     messages: [
       {
         type: 'text',
-        text: 'สตาร์ทรถให้เรียบร้อยครับท่าน'
+        text: 'สตาร์ทรถให้เรียบร้อยแล้วครับ'
       }
     ]
   }
